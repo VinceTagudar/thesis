@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sidebar</title>
+  <!-- Bootstrap CSS CDN -->
+  <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+  <link href="/bootstrap4-glyphicons/css/bootstrap-glyphicons.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Our Custom CSS -->
+  <link rel="stylesheet" href="css/physical-view.css"> </head>
+  
+<body>
+  <!--div class="wrapper"-->
+    <!-- Sidebar Holder -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h4> Hi, Jhaypee!</h4>
+      </div>
+      <ul class="list-unstyled components">
+        <li class="active">
+          <a href="dashboard.html">
+            <i class="glyphicon glyphicon-dashboard"></i> Dashboard </a>
+        </li>
+        <li>
+          <a href="reservations.html">
+            <i class="glyphicon glyphicon-file"></i> Reservations</a>
+
+          <a href="guests.html">
+            <i class="glyphicon glyphicon-user"></i> Guests </a>
+        </li>
+        <li>
+          <a href="reports.html">
+            <i class="glyphicon glyphicon-print"></i> Reports</a>
+        </li>
+        <li>
+          <a href="index.html">
+            <i class="glyphicon glyphicon-log-out"></i> Logout </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Page Content Holder -->
+    <div id="content">
+      <!--nav class="navbar navbar-default w-50">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary navbar-btn">
+              <i class="glyphicon glyphicon-menu-hamburger"></i>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
+          </div>
+        </div>
+      </nav-->
+    <!--div class="py-5 bg-light mr-auto w-25"-->
+        <div class="container main-content" style="padding-top: 1em;">
+            <div class="col-md-12 text-center lodging-tabs">
+                <nav class="nav nav-pills centered-pills">
+                    <a class="nav-item nav-link active" href="#">Physical View</a>
+                    <a class="nav-item nav-link" href="#">Calendar View</a>
+                </nav>
+            </div>
+            <div class="container lodging-tabs">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Glamping</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="physical view (backpacker).html">Transient Backpacker</a>
+                    </li>
+                </ul>
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Tent 1</h5>
+                        <p class="card-text">Guest Name</p>
+                        <p class="card-text">Guest ID</p>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-info logding-details-btn" class="btn btn-info" data-toggle="modal" data-target="#view-details">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Tent 2</h5>
+                        <p class="card-text">Guest Name</p>
+                        <p class="card-text">Guest ID</p>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-info logding-details-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Tent 3</h5>
+                        <p class="card-text">Guest Name</p>
+                        <p class="card-text">Guest ID</p>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-info logding-details-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Tent 4</h5>
+                        <p class="card-text">Guest Name</p>
+                        <p class="card-text">Guest ID</p>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-info logding-details-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Tent 5</h5>
+                        <p class="card-text">Guest Name</p>
+                        <p class="card-text">Guest ID</p>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-info logding-details-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Tent 6</h5>
+                        <p class="card-text">Guest Name</p>
+                        <p class="card-text">Guest ID</p>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-info logding-details-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Tent 7</h5>
+                        <p class="card-text">Guest Name</p>
+                        <p class="card-text">Guest ID</p>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-info logding-details-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Tent 8</h5>
+                        <p class="card-text">Guest Name</p>
+                        <p class="card-text">Guest ID</p>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-info logding-details-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--/div-->
+        </div>
+        <div class="modal fade right" id="view-details" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-full-height modal-right modal-notify modal-info" role="document">
+                <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <p class="heading lead">Tent 1</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white-text">×</span>
+                    </button>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                    <h5 class="text-center">
+                        Tent Details
+                    </h5>
+                    <div class="container">
+                        <table class="table table-sm borderless">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 35%">Tent ID:</td>
+                                    <td>00001</td>
+                                </tr>
+                                <tr>
+                                    <td>Tent number:</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Capacity:</td>
+                                    <td>4 pax</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+                    <h5 class="text-center">
+                        Guest Details
+                    </h5>
+                    <div class="container">
+                        <table class="table table-sm borderless">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 35%">Guest ID:</td>
+                                    <td>00001</td>
+                                </tr>
+                                <tr>
+                                    <td>Guest name:</td>
+                                    <td>Dawn Cundangan</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of pax:</td>
+                                    <td>2 pax</td>
+                                </tr>
+                                <tr style="font-style: italic; color: green;">
+                                    <td colspan="2">
+                                        Checked-in *date* at *time*
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>      
+      <!-- jQuery CDN -->
+      <!--script src="https://code.jquery.com/jquery-1.12.0.min.js"></script-->
+      <!-- Bootstrap Js CDN -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">1</script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+      <script type="text/javascript">
+        $(document).ready(function () {
+                       $('#sidebarCollapse').on('click', function () {
+                           $('#sidebar').toggleClass('active');
+                       });
+                   });
+      </script>
+    </div>
+  </div>
+</body>
+
+</html>

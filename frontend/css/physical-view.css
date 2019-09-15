@@ -1,0 +1,221 @@
+body {
+  padding-bottom: 5em;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed !important;
+  z-index: 100; 
+  padding: 48px 0 0;
+  min-width: 250px;
+  max-width: 250px;
+  background: rgb(41, 41, 43);
+  background: rgb(48,62,77);
+  color: rgb(255, 255, 255);
+  transition: all 0.3s;
+  min-height:100%;
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link i {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover i,
+.sidebar .nav-link.active i {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/* Navbar */
+.navbar ul li a {
+    color: white;
+}
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  margin: .30em;
+  border-width: 0;
+  border-radius: 2;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+/* Main container */
+.main-content {
+  margin-left: 250px !important;
+  margin-top: 4em;
+  width: 81% !important;
+}
+
+/* Physical view */
+.unit-heading {
+    padding-top: .2em;
+}
+  
+.card {
+    margin-top: .5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.card-text {
+    padding: 0em;
+    margin: 0em;
+    font-size: 0.925em;
+}
+
+.card-title {
+  text-decoration:none !important;
+  color: rgb(40,40,40) !important;
+}
+
+.card-title:hover {
+  color: rgb(70,70,70) !important;
+}
+
+.lodging-tabs {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.logding-details-btn {
+    margin-top: 1em;
+}
+
+.centered-pills { 
+    display: flex;
+    justify-content: center;
+}
+
+.borderless td, .borderless th {
+    border: none !important;
+}
+
+/* Guest check-out */
+.check-out-form {
+    font-size: 0.90em;
+}
+
+.form-control {
+    font-size: 0.90em;
+}
+
+/* View reservations */
+.reservationTable {
+  font-size: 0.90em;
+}
+
+.reservationTable .btn {
+  font-size: 0.90em;
+  width: 6em;
+}
+
+
+/*POS*/
+.pos-tabs {
+  margin-top: 5em;
+  margin-bottom: 1em;
+  margin-left: 10em;
+}
+
+.left-pills { 
+  display: flex;
+  justify-content: center;
+}
+
+/*Tabs*/
+.tabs-left > .nav-tabs {
+  border-bottom: 0;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+
+.tabs-left > .nav-tabs > li {
+  float: none;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
+.tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 19px;
+  border-right: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+  *border-right-color: #ffffff;
+}
+
